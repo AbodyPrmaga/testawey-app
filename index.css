@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #00ccff, #7700ff);
+    padding: 20px;
+}
+
+.registration-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgb(0, 0, 0, 0.15);
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.registration-title {
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.registration-form {
+    display: grid;
+    gap: 24px;
+}
+
+.form-group {
+    display: grid;
+    gap: 8px;
+}
+
+.form-label {
+    color: #444;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.form-input {
+    padding: 14px 16px;
+    border: 2px solid rgb(225, 229, 233);
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #7700ff;
+    box-shadow: 0 0 0 3px #7700ff1a;
+}
+
+.submit-button {
+    background: linear-gradient(45deg, #00ccff, #7700ff);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s ease , box-shadow 0.2s ease;
+}
+
+.submit-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.submit-button:active{
+    transform: translateY(0);
+}
